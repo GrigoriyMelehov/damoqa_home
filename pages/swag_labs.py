@@ -6,7 +6,7 @@ class SwagLabs(BasePage):
 
     def exist_icon(self):
         try:
-            self.find_element(locator = '#root > div > div.login_logo')
+            self.find_element(locator = 'div.login_logo')
         except NoSuchElementException:
             return False
         return True
